@@ -20,7 +20,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > show current working directory path: pwd
+> > create a directory: mkdir
+> > delete a directory: rm -r
+> > create a file with 'touch': touch <filename>
+> > delete a file: rm <filename>
+> > rename a file: mv <oldname> <newname>
+> > list hidden files: ls -a
+> > copy file from one directory to another: cp <filename> <directory/>
+> > append std output from file on left to file on right: <filename> >> <filename>
+> > search files for pattern and return results: grep "pattern" <filename>
 
 ---
 
@@ -35,7 +44,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls': lists all files and directories within current working directory
+> > 'ls -a': lists all files and directories within current working directory, including hidden files
+> > 'ls -l': lists all files and directories in current working directory in long format
+> > 'ls -lh': lists all files and directories in current working directory in long format, using unit suffixes
+> > 'ls -lah': lists all files and directories in current working directory including hidden files, in long format, using unit suffixes
+> > 'ls -t': lists all files and directories in current working directory sorted by most recently modified'
+> > 'ls -Glp': lists all files and directories in current working directory with colorized output and a fwd slash after each directory name  
 
 ---
 
@@ -43,7 +58,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'ls -C': output in columnar format
+> > 'ls -d': lists only directories
+> > 'ls -r': lists files in reverse order
+> > 'ls -R': includes subdirectories
+> > 'ls -u': sorts by file access time
+> > 'ls -x': displays files as rows
 
 ---
 
@@ -51,7 +71,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'xargs' funnels standard input into command line tools. By default, without argument, xargs runs this input into the "echo" command, but other tools can be specified. For example, xargs is commonly used with "find" and "rm" (remove), like this:
+
+> > find . -name "*.txt" | xargs rm
+
+> > this command will find all files in the current directory (.) with '.txt' in the name, and then xargs will remove those files
 
  
 
